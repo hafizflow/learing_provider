@@ -6,6 +6,7 @@ import 'package:learing_provider/screens/favorite/all_item_screen.dart';
 import 'package:learing_provider/screens/slider_screen.dart';
 import 'package:learing_provider/screens/time_screen.dart';
 import 'package:learing_provider/provider/time_provider.dart';
+import 'package:learing_provider/screens/value_notify_listener.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -28,7 +29,7 @@ class MainApp extends StatelessWidget {
         final themeProvider = Provider.of<ThemeProvider>(context);
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: const AllItemScreen(),
+          home: ValueNotifyListener(),
           themeMode: themeProvider.themeMode,
           theme: ThemeData(
             useMaterial3: false,
