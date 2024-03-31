@@ -3,6 +3,7 @@ import 'package:learing_provider/provider/favorite_provider.dart';
 import 'package:learing_provider/provider/slider_provider.dart';
 import 'package:learing_provider/provider/theme_provider.dart';
 import 'package:learing_provider/screens/favorite/all_item_screen.dart';
+import 'package:learing_provider/screens/favorite/login_screen.dart';
 import 'package:learing_provider/screens/slider_screen.dart';
 import 'package:learing_provider/screens/time_screen.dart';
 import 'package:learing_provider/provider/time_provider.dart';
@@ -29,7 +30,7 @@ class MainApp extends StatelessWidget {
         final themeProvider = Provider.of<ThemeProvider>(context);
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: ValueNotifyListener(),
+          home: const LoginScreen(),
           themeMode: themeProvider.themeMode,
           theme: ThemeData(
             useMaterial3: false,
